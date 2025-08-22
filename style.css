@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-family: Roboto;
+
+}
+
+
+.app {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+
+
+
+header {
+    /* background-color: bisque; */
+    width: 1440px;
+    height: 160px;
+    display: flex;
+    flex-flow: column;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+body{
+    /* background-color: #D0D0D0; */
+    margin: 0;
+    font-family: 'Oswald', sa;
+}
+
+.barra-contato {
+    /* background-color: darkcyan; */
+    width: 100%;
+    height: 40px;
+
+}
+
+.barra-nav {
+    /*   background-color: cadetblue; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+
+}
+
+nav>ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li>a {
+    padding: 10px;
+    /*  background-color: #A0A0A0; */
+    /*  botons */
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+
+
+}
+
+.wrapper-logo {
+    width: 330px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.wrapper-logo>img{
+    width: 150px;
+    
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+
+
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 60px;
+
+
+}
+
+.fotos {
+    width: 1440px;
+    display: flex;
+    flex-flow: wrap;
+    
+
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color: #f8f6f6;
+/*     font-size: 16px; */
+    line-height: 1.6;
+
+}
+
+body {
+  /* imagem de fundo cobrindo toda a tela */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/home.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* texto branco para todo o corpo */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu superior com texto branco */
+.barra-nav nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.barra-nav nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Título e parágrafos da seção quem somos */
+.quemsomos h1{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+   height: 20vh;
+
+}
+
+.quemsomos p {
+  color: white;
+  width: 1440px;
+  
+
+}
+
+/* Se quiser deixar os links do menu inline e bonitos */
+.barra-nav nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* Para evitar que outros textos fiquem brancos por padrão, você pode definir cor preta dentro das outras seções, por exemplo: */
+
+
+.servicos,
+footer {
+  color: #f0ecec; /* texto escuro para essas seções */
+  background: transparent; /* para o fundo transparente, deixar o background da página visível */
+  padding: 20px 0;
+}
+
+.contato{
+    flex: auto;
+    padding: 80px;
+    
+}
