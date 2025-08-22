@@ -3,7 +3,9 @@
     margin: 0;
     list-style: none;
     padding: 0;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
 
 }
 
@@ -15,25 +17,18 @@
 
 }
 
-
-
-
 header {
-    /* background-color: bisque; */
-    width: 1440px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
     height: 160px;
     display: flex;
+    align-items: center;
     flex-flow: column;
-    background-repeat: no-repeat;
-    background-position: center top;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.034);
 
 }
 
-body{
-    /* background-color: #D0D0D0; */
-    margin: 0;
-    font-family: 'Oswald', sa;
-}
 
 .barra-contato {
     /* background-color: darkcyan; */
@@ -45,7 +40,7 @@ body{
 .barra-nav {
     /*   background-color: cadetblue; */
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100%;
 
 }
@@ -72,8 +67,10 @@ li>a {
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
+}
 
-
+li>a:hover {
+    color: #137dd3;
 }
 
 .wrapper-logo {
@@ -85,9 +82,9 @@ li>a {
 
 }
 
-.wrapper-logo>img{
+.wrapper-logo>img {
     width: 150px;
-    
+
 }
 
 main {
@@ -99,14 +96,21 @@ main {
 
 }
 
+.quemsomos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100vh;
+}
+
 .portfolio {
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
-    gap: 60px;
-
+    height: 100vh;
 
 }
 
@@ -114,82 +118,54 @@ main {
     width: 1440px;
     display: flex;
     flex-flow: wrap;
-    
+    margin-top: 30px;
+
 
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: bold;
     font-style: italic;
-    color: #f8f6f6;
-/*     font-size: 16px; */
-    line-height: 1.6;
 
 }
 
-body {
-  /* imagem de fundo cobrindo toda a tela */
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('img/home.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white; /* texto branco para todo o corpo */
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+
+.servicos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100vh;
 }
 
-/* Menu superior com texto branco */
-.barra-nav nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+.servicos ul {
+    margin-top: 30px;
 }
 
-.barra-nav nav ul li a:hover {
-  color: #ddd;
+.servicos ul li {
+    text-align: center;
+    font-size: 20px;
 }
 
-/* Título e parágrafos da seção quem somos */
-.quemsomos h1{
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 100px;
-   height: 20vh;
-
+.contato {
+    padding: 50px;
 }
 
-.quemsomos p {
-  color: white;
-  width: 1440px;
-  
-
-}
-
-/* Se quiser deixar os links do menu inline e bonitos */
-.barra-nav nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-/* Para evitar que outros textos fiquem brancos por padrão, você pode definir cor preta dentro das outras seções, por exemplo: */
-
-
-.servicos,
 footer {
-  color: #f0ecec; /* texto escuro para essas seções */
-  background: transparent; /* para o fundo transparente, deixar o background da página visível */
-  padding: 20px 0;
+    background-color: #137dd3;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
 }
 
-.contato{
-    flex: auto;
-    padding: 80px;
-    
+footer img {
+    width: 70px;
 }
